@@ -8,4 +8,7 @@ class ExperiencesController < ApplicationController
       details: params[:details]
     )
   end
+
+  def update
+  end
 end
