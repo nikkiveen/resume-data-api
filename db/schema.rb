@@ -26,7 +26,6 @@ ActiveRecord::Schema.define(version: 20160501165338) do
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
     t.integer  "student_id"
-
   end
 
   create_table "experiences", force: :cascade do |t|
