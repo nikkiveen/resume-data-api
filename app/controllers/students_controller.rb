@@ -4,7 +4,7 @@ class StudentsController < ApplicationController
   end
 
   def new
-    render 'new.html.erb'
+    render 'new.json.jbuilder'
   end
 
   def create
@@ -12,11 +12,12 @@ class StudentsController < ApplicationController
   end
 
   def show
-    render 'show.html.erb'
+    @student = Student.find_by(id: params[:id])
+    render 'show.json.jbuilder'
   end
 
   def edit
-    render 'edit.html.erb'
+    render 'edit.json.jbuilder'
   end
 
   def update
