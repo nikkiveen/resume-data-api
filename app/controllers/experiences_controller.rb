@@ -7,6 +7,7 @@ class ExperiencesController < ApplicationController
       company_name: params[:company_name],
       details: params[:details]
     )
+    redirect_to "/students/#{params[:id]}"
   end
 
   def update
@@ -19,8 +20,13 @@ class ExperiencesController < ApplicationController
       company_name: params[:company_name] || @experience.company_name,
       details: params[:details] || @experience.details
     )
+    redirect_to "/students/#{params[:id]}"
   end
 
   def destroy
+    @experience = Experience.find_by(id: params[:id])
+    @experience.destroy
+    render json: {message: "Shipper successfully deleted."}
+    redirect_to "/students"
   end
 end
