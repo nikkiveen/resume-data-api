@@ -13,6 +13,7 @@
 
 ActiveRecord::Schema.define(version: 20160501165338) do
 
+
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -24,6 +25,7 @@ ActiveRecord::Schema.define(version: 20160501165338) do
     t.text     "details"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
+    t.integer  "student_id"
   end
 
   create_table "experiences", force: :cascade do |t|
@@ -34,12 +36,15 @@ ActiveRecord::Schema.define(version: 20160501165338) do
     t.text     "details"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
+
+    t.integer  "student_id"
   end
 
   create_table "skills", force: :cascade do |t|
     t.string   "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "student_id"
   end
 
   create_table "students", force: :cascade do |t|
