@@ -1,28 +1,50 @@
-== README
+Sample JSON Data:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[
+  {
+    id: x
+    first_name: xxx
+    last_name: xxx
+    email: xxx
+    phone_number: xxx
+    short_bio: xxx
+    linkedin_url: xxx
+    twitter_handle: xxx
+    blog: xxx
+    resume_url: xxx
+    github_url: xxx
+    photo: xxx
+    experiences [
+      {
+        id: xxx
+        job_title: xxx
+        company_name: xxx
+        start_date: xxx
+        end_date: xxx
+        details: xxx
+      }
+    ]
+    educations [
+      {
+        id: xxx
+        degree: xxx
+        university_name: xxx
+        start_date: xxx
+        end_date: xxx
+        details: xxx
+      }
+    ]
+    skills [
+      id: xxx
+      name: xxx
+    ]
+  }
+]
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+      
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+
+
+
+
