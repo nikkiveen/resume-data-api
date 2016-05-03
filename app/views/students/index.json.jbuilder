@@ -9,7 +9,7 @@ json.array! @students.each do |student|
   json.twitter_handle student.twitter_handle
   json.blog student.blog
   json.resume_url student.resume_url
-  json.github_url student.github.url
+  json.github_url student.github_url
   json.photo student.photo
   json.experiences student.experiences.each do |experience|
     json.id experience.id
