@@ -20,4 +20,7 @@ class ExperiencesController < ApplicationController
       details: params[:details] || @experience.details
     )
   end
+
+  def destroy
+  end
 end
