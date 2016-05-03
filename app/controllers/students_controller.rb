@@ -1,6 +1,6 @@
 class StudentsController < ApplicationController
   def index
-    render 'index.html.erb'
+    render 'index.json.jbuilder'
   end
 
   def new
