@@ -15,13 +15,14 @@ Student.create(
   )
 end 
  
-50.times do
+75.times do
 Education.create(
   :start_date => Faker::Date.backward(1000),
   :end_date => Faker::Date.backward(365),
   :degree => Faker::Book.genre,
   :university_name => Faker::University.name,
-  :details => Faker::Lorem.sentences(1)
+  :details => Faker::Lorem.sentences(1),
+  :student_id => rand(1..50)
   )
 end 
 
@@ -31,13 +32,15 @@ Experience.create(
   :end_date => Faker::Date.backward(365),
   :job_title => Faker::Company.profession,
   :company_name => Faker::Company.name,
-  :details => Faker::Lorem.sentences(1)
+  :details => Faker::Lorem.sentences(1),
+  :student_id => rand(1..50)
   )
 end 
 
-20.times do
+150.times do
 Skill.create(
-  :name => Faker::Lorem.words
+  :name => Faker::Lorem.words,
+  :student_id => rand(1..50)
 )
 end 
 
