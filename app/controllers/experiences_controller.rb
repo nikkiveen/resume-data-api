@@ -20,6 +20,7 @@ class ExperiencesController < ApplicationController
       company_name: params[:company_name] || @experience.company_name,
       details: params[:details] || @experience.details
     )
+    render json: {message: "Experience successfully deleted."}
     redirect_to "/students/#{params[:id]}"
   end
 
