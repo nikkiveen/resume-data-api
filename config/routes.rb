@@ -8,15 +8,15 @@ Rails.application.routes.draw do
   delete '/students/:id' => 'students#destroy'
   #####################################################
   post '/experiences' => 'experiences#create'
-  patch '/experiences' => 'experiences#update'
+  patch '/experiences/:id' => 'experiences#update'
   delete '/experiences/:id' => 'experiences#destroy'
   #####################################################
   post '/educations' => 'educations#create'
-  patch '/educations' => 'educations#update'
+  patch '/educations/:id' => 'educations#update'
   delete '/educations/:id' => 'educations#destroy'
   #####################################################
   post '/skills' => 'skills#create'
-  patch '/skills' => 'skills#update'
+  patch '/skills/:id' => 'skills#update'
   delete '/skills/:id' => 'skills#destroy'
  
   # The priority is based upon order of creation: first created -> highest priority.
