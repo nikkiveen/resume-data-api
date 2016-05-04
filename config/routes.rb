@@ -10,6 +10,14 @@ Rails.application.routes.draw do
   post '/experiences' => 'experiences#create'
   patch '/experiences' => 'experiences#update'
   delete '/experiences/:id' => 'experiences#destroy'
+  #####################################################
+  post '/educations' => 'educations#create'
+  patch '/educations' => 'educations#update'
+  delete '/educations/:id' => 'educations#destroy'
+  #####################################################
+  post '/skills' => 'skills#create'
+  patch '/skills' => 'skills#update'
+  delete '/skills/:id' => 'skills#destroy'
  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
