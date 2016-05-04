@@ -27,7 +27,7 @@ class ExperiencesController < ApplicationController
   def destroy
     @experience = Experience.find_by(id: params[:id])
     @experience.destroy
-    render json: {message: "Shipper successfully deleted."}
+    render json: {message: "Experience successfully deleted."}
     redirect_to "/students"
   end
 end
